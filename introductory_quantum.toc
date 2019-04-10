@@ -1,0 +1,60 @@
+\contentsline {chapter}{Contents}{1}{section*.1}
+\contentsline {chapter}{\chapternumberline {1}Origins of Quantum Mechanics}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}The Breakdown of Classical Mechanics}{3}{section.1.1}
+\contentsline {subsection}{Black-Body Radiation and the Rayleigh-Jeans Law}{3}{section*.2}
+\contentsline {subsection}{The Photoelectric Effect}{4}{section*.4}
+\contentsline {subsection}{Wave-Particle Duality}{5}{section*.6}
+\contentsline {section}{\numberline {1.2}Wavefunctions and Mathematical Tools}{5}{section.1.2}
+\contentsline {subsection}{Wavefunctions and the Schr{\"o}dinger Equation}{5}{section*.7}
+\contentsline {subsection}{The Born Interpretation and Normalisation}{6}{section*.8}
+\contentsline {subsection}{Hamiltonians, Operators, and Observables}{7}{section*.9}
+\contentsline {subsection}{Eigenvalues and Eigenfunctions}{8}{section*.10}
+\contentsline {subsection}{Expectation Values of Operators}{8}{section*.11}
+\contentsline {subsection}{Commutators and Heisenberg's Uncertainty Principle}{9}{section*.13}
+\contentsline {section}{\numberline {1.3}Summary - The Postulates of Quantum Mechanics}{10}{section.1.3}
+\contentsline {chapter}{\chapternumberline {2}Translational Motion}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Free Motion in 1 Dimension}{13}{section.2.1}
+\contentsline {section}{\numberline {2.2}Particle in a 1D Box}{14}{section.2.2}
+\contentsline {subsection}{Boundary Conditions and the Emergence of Quantisation}{16}{section*.15}
+\contentsline {subsection}{The Acceptable Solutions}{17}{section*.18}
+\contentsline {subsection}{Probability Distributions and the Correspondence Principle}{19}{section*.21}
+\contentsline {section}{\numberline {2.3}Chapter 2 Summary}{20}{section.2.3}
+\contentsline {chapter}{\chapternumberline {3}Vibrational Motion}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}The Classical Harmonic Oscillator}{21}{section.3.1}
+\contentsline {section}{\numberline {3.2}The Quantum Harmonic Oscillator}{23}{section.3.2}
+\contentsline {subsection}{The SE for a Harmonic Oscillator}{23}{section*.24}
+\contentsline {subsection}{The Vibrational Energy Levels}{23}{section*.25}
+\contentsline {subsection}{The Vibrational Wavefunctions}{24}{section*.27}
+\contentsline {section}{\numberline {3.3}Chapter 3 Summary}{26}{section.3.3}
+\contentsline {chapter}{\chapternumberline {4}Rotational Motion}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Angular Momentum}{27}{section.4.1}
+\contentsline {section}{\numberline {4.2}Quantum Mechanical Rotation}{29}{section.4.2}
+\contentsline {subsection}{A Particle on a Ring}{29}{section*.33}
+\contentsline {subsubsection}{The Schr{\"o}dinger Equation}{29}{section*.35}
+\contentsline {subsubsection}{The Boundary Conditions and Quantisation}{31}{section*.38}
+\contentsline {section}{\numberline {4.3}The Particle on a Sphere}{33}{section.4.3}
+\contentsline {subsection}{Aside - The Spherical Harmonics and Atomic Orbitals}{34}{section*.46}
+\contentsline {subsection}{The Angular Momentum Quantum Numbers, $l$ and $m_l$}{35}{section*.48}
+\contentsline {subsection}{The Vector Model}{36}{section*.50}
+\contentsline {subsection}{Particle on a Sphere Summary}{38}{section*.53}
+\contentsline {section}{\numberline {4.4}Chapter 4 Summary}{38}{section.4.4}
+\contentsline {chapter}{\chapternumberline {5}The Born-Oppenheimer Approximation}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Origins}{39}{section.5.1}
+\contentsline {section}{\numberline {5.2}Applications to Molecular Spectroscopy}{40}{section.5.2}
+\contentsline {section}{\numberline {5.3}Chapter 5 Summary}{41}{section.5.3}
+\contentsline {chapter}{\chapternumberline {6}Rotational and Vibrational Quantisation of Molecules}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Spectroscopy}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}Rotational Quantisation}{44}{section.6.2}
+\contentsline {subsection}{Rotational Energy Levels}{44}{section*.57}
+\contentsline {subsection}{Selection Rules and Allowed Transitions}{45}{section*.59}
+\contentsline {section}{\numberline {6.3}Vibrational Quantisation}{47}{section.6.3}
+\contentsline {subsection}{Vibrational Energy Levels}{47}{section*.60}
+\contentsline {subsection}{Vibrational Selection Rules}{49}{section*.64}
+\contentsline {section}{\numberline {6.4}Conclusion}{50}{section.6.4}
+\contentsline {chapter}{Appendices}{51}{section*.65}
+\contentsline {appendix}{\chapternumberline {A}Construction of Operators}{53}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}More Advanced Mathematical Concepts in QM}{55}{appendix.B}
+\contentsline {section}{\numberline {B.1}Dirac Bra-ket Notation}{55}{section.B.1}
+\contentsline {section}{\numberline {B.2}Hermitian Operators}{55}{section.B.2}
+\contentsline {appendix}{\chapternumberline {C}Classification of Molecular Rotors}{57}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Transition Dipole Moments}{59}{appendix.D}

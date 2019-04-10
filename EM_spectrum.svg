@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="8.2677164in"
+   height="1.652in"
+   viewBox="0 0 210 41.9608"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="EM_spectrum.svg"
+   inkscape:export-filename="/home/pickering/Dropbox/Work/Leicester/introductory_quantum/EM_spectrum.png"
+   inkscape:export-xdpi="400"
+   inkscape:export-ydpi="400">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path848"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path845"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="418.90372"
+     inkscape:cy="209.36298"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="in"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-255.0392)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.79499996,0.26499999;stroke-dashoffset:0"
+       d="M 7.5595238,275.49317 H 201.83928"
+       id="path819"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="0.58503181"
+       y="273.48016"
+       id="text823"><tspan
+         sodipodi:role="line"
+         id="tspan825"
+         x="0.58503181"
+         y="273.48016"
+         style="stroke-width:0.26458332">Long λ</tspan></text>
+    <text
+       id="text833"
+       y="280.05676"
+       x="0.6228295"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan835"
+         x="0.6228295"
+         y="280.05676">Low ω</tspan></text>
+    <text
+       id="text839"
+       y="273.97156"
+       x="192.82372"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="273.97156"
+         x="192.82372"
+         id="tspan837"
+         sodipodi:role="line">Short λ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="193.05051"
+       y="280.24576"
+       id="text843"><tspan
+         id="tspan841"
+         sodipodi:role="line"
+         x="193.05051"
+         y="280.24576">High ω</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 25.132292,275.26637 v -11.1503"
+       id="path1165"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1167"
+       d="m 51.798958,275.26637 v -11.1503"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 131.79896,275.26637 v -11.1503"
+       id="path1169"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1171"
+       d="m 105.13229,275.26637 v -11.1503"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 78.465625,275.26637 v -11.1503"
+       id="path1173"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1175"
+       d="m 158.46562,275.26637 v -11.1503"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 185.13229,275.26637 v -11.1503"
+       id="path1177"
+       inkscape:connector-curvature="0" />
+    <text
+       id="text1181"
+       y="261.40375"
+       x="18.520002"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#552200;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332;fill:#552200;"
+         y="261.40375"
+         x="18.520002"
+         id="tspan1179"
+         sodipodi:role="line">Radio</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#800000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="40.215847"
+       y="261.40375"
+       id="text1189"
+       inkscape:transform-center-x="0.7559524"><tspan
+         sodipodi:role="line"
+         id="tspan1187"
+         x="40.215847"
+         y="261.40375"
+         style="stroke-width:0.26458332;fill:#800000;">Microwave</tspan></text>
+    <text
+       inkscape:transform-center-x="0.7559524"
+       id="text1193"
+       y="261.40375"
+       x="69.84919"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332;fill:#ff0000;"
+         y="261.40375"
+         x="69.84919"
+         id="tspan1191"
+         sodipodi:role="line">Infrared</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="97.89502"
+       y="261.40375"
+       id="text1197"
+       inkscape:transform-center-x="0.7559524"><tspan
+         sodipodi:role="line"
+         id="tspan1195"
+         x="97.89502"
+         y="261.40375"
+         style="stroke-width:0.26458332;fill:#008000;">Visible</tspan></text>
+    <text
+       inkscape:transform-center-x="0.7559524"
+       id="text1201"
+       y="261.40375"
+       x="120.64917"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332;fill:#0000ff;"
+         y="261.40375"
+         x="120.64917"
+         id="tspan1199"
+         sodipodi:role="line">Ultraviolet</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#2ad4ff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="151.86995"
+       y="261.40375"
+       id="text1205"
+       inkscape:transform-center-x="0.7559524"><tspan
+         sodipodi:role="line"
+         id="tspan1203"
+         x="151.86995"
+         y="261.40375"
+         style="stroke-width:0.26458332;fill:#2ad4ff;">X-Ray</tspan></text>
+    <text
+       inkscape:transform-center-x="0.7559524"
+       id="text1209"
+       y="261.40375"
+       x="179.38655"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#800080;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan1211"
+         x="179.38655"
+         y="261.40375">γ-Ray</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="30.616072"
+       y="282.6369"
+       id="text1215"><tspan
+         sodipodi:role="line"
+         id="tspan1213"
+         x="30.616072"
+         y="291.5748"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       id="text1181-8"
+       y="282.75159"
+       x="25.191757"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         y="286.64304"
+         x="25.191757"
+         id="tspan1179-9"
+         sodipodi:role="line" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.68052745px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#552200;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="19.140682"
+       y="279.25446"
+       id="text1237"><tspan
+         sodipodi:role="line"
+         id="tspan1235"
+         x="19.140682"
+         y="279.25446"
+         style="stroke-width:0.26458332;fill:#552200;">1-1000m</tspan></text>
+    <text
+       id="text1241"
+       y="279.06546"
+       x="43.86034"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.68052745px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#550000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332;fill:#550000;"
+         y="279.06546"
+         x="43.86034"
+         id="tspan1239"
+         sodipodi:role="line">10µm-1mm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.68052745px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="74.325241"
+       y="278.97098"
+       id="text1245"><tspan
+         sodipodi:role="line"
+         id="tspan1243"
+         x="74.325241"
+         y="278.97098"
+         style="stroke-width:0.26458332;fill:#ff0000;">1-10µm</tspan></text>
+    <text
+       id="text1249"
+       y="279.15997"
+       x="97.438507"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.68052745px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332;fill:#008000;"
+         y="279.15997"
+         x="97.438507"
+         id="tspan1247"
+         sodipodi:role="line">400-800nm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.68052745px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="126.44818"
+       y="279.25446"
+       id="text1253"><tspan
+         sodipodi:role="line"
+         id="tspan1251"
+         x="126.44818"
+         y="279.25446"
+         style="stroke-width:0.26458332;fill:#0000ff;">10-400nm</tspan></text>
+    <text
+       id="text1257"
+       y="279.06546"
+       x="150.07169"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.68052745px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332;fill:#00ffff;"
+         y="279.06546"
+         x="150.07169"
+         id="tspan1255"
+         sodipodi:role="line">100pm-1nm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.68052745px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#800080;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="178.98686"
+       y="279.06546"
+       id="text1261"><tspan
+         sodipodi:role="line"
+         id="tspan1259"
+         x="178.98686"
+         y="279.06546"
+         style="stroke-width:0.26458332;fill:#800080;">&lt;10pm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.50328684px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#550000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="43.687435"
+       y="287.90994"
+       id="text1265"><tspan
+         sodipodi:role="line"
+         id="tspan1263"
+         x="43.687435"
+         y="287.90994"
+         style="fill:#550000;stroke-width:0.26458332">Rotations</tspan></text>
+    <text
+       id="text1269"
+       y="287.8739"
+       x="69.516823"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.50328684px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#ff0000;stroke-width:0.26458332"
+         y="287.8739"
+         x="69.516823"
+         id="tspan1267"
+         sodipodi:role="line">Vibrations</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.50328684px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="99.50502"
+       y="287.90994"
+       id="text1273"><tspan
+         sodipodi:role="line"
+         id="tspan1271"
+         x="99.50502"
+         y="287.90994"
+         style="fill:#0000ff;stroke-width:0.26458332">Electronic Excitation</tspan></text>
+    <text
+       id="text1281"
+       y="287.90994"
+       x="16.19907"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.50328684px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#552200;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#552200;stroke-width:0.26458332"
+         y="287.90994"
+         x="16.19907"
+         id="tspan1279"
+         sodipodi:role="line">Heart FM</tspan></text>
+    <path
+       style="fill:none;stroke:#552200;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 15.891213,279.08794 v 3.77977 h 20.221725 v -3.77977"
+       id="path1283"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1285"
+       d="m 40.661695,279.08794 v 3.77977 h 24.747962 v -3.77977"
+       style="fill:none;stroke:#550000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 69.680789,279.08794 v 3.77977 h 20.218563 v -3.77977"
+       id="path1287"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1289"
+       d="m 95.27467,278.68113 v 4.18658 h 48.84041 v -4.18658"
+       style="fill:none;stroke:#0000ff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       style="fill:none;stroke:#800080;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 149.06188,278.68113 v 4.18658 h 42.79264 v -4.18658"
+       id="path1297"
+       inkscape:connector-curvature="0" />
+    <text
+       id="text1301"
+       y="287.90994"
+       x="150.30493"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.50328684px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#800080;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="fill:#800080;stroke-width:0.26458332"
+         y="287.90994"
+         x="150.30493"
+         id="tspan1299"
+         sodipodi:role="line">Ionising Death Rays</tspan></text>
+  </g>
+</svg>

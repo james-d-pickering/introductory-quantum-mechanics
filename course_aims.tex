@@ -1,0 +1,126 @@
+\documentclass{memoir}[11pt,oneside,a4paper,openany]
+\PassOptionsToPackage{svgnames}{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\usepackage{nth}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\newenvironment{myexampleblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightGreen,colframe=DarkGreen,%
+    colbacklower=LimeGreen!75!LightGreen,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{myalertblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightCoral,colframe=DarkRed,%
+    colbacklower=Tomato!75!LightCoral,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{myblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightBlue,colframe=DarkBlue,%
+    colbacklower=DarkBlue!75!LightBlue,%
+    title=#1]}%
+    {\endtcolorbox}
+
+
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{*}{1}
+\checkandfixthelayout
+
+\setlength{\parskip}{0.3cm}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\chapter*{Course Aims}
+After completing each chapter of this course, you should be able to do the following.
+\section*{Chapter 1 - Origins of QM}
+\begin{itemize}
+	\item Describe and explain some of the scientific discoveries that led to the breakdown of classical mechanics in the late \nth{19} century.
+	\item Describe what a \textbf{wavefunction} is, and explain how they can be calculated by solving the \textbf{Schr{\"o}dinger Equation.} Describe what makes a wavefunction acceptable or not.
+	\item Qualitatively explain the \textbf{Born Interpretation} of the wavefunction, and explain how it allows wavefunctions to be \textbf{normalised}. Be able to normalise simple wavefunctions via integration.
+	\item Explain \textbf{operators and observables}, and how \textbf{observables} correspond to \textbf{operators}. Calculate observables from operators and simple wavefunctions.
+	\item Explain why the \textbf{Hamiltonian Operator} is special, and explain what observable it calculates.
+	\item Show that the Schr{\"o}dinger Equation is a kind of \textbf{eigenvalue equation}. Be able to show that a wavefunction is an eigenfunction of a specific operator algebraically.
+	\item Give the expression for the \textbf{expectation value} of an operator, and apply it to simple examples to calculate expectation values.
+	\item Qualitatively explain \textbf{The Uncertainty Principle} in terms of position and momentum. 
+	\item Explain the significance of the \textbf{commutator} in quantum mechanics.
+	\item Summarise the five \textbf{Postulates of Quantum Mechanics} given at the end of this chapter.
+\end{itemize}
+\section*{Chapter 2 - Translational Motion}
+\begin{itemize}
+	\item Describe the meaning of \textbf{translational motion} and give the \textbf{Hamiltonian} for a particle free to move in one dimension.
+	\item Using a given wavefunction and Hamiltonian, be able to calculate the energy eigenvalue for a particle free to move in one dimension. Explain the significance of the quantity $k\hbar$.
+	\item Qualitatively explain the concept of \textbf{quantisation of energy}, and explain how and when it arises.
+	\item Being given all relevant wavefunctions and Hamiltonians, be able to derive an expression for the energy of a particle confined to a one dimensional box. Show algebraically why this energy is \textbf{quantised}.
+	\item Explain the significance of the \textbf{quantum number} n.
+	\item Sketch the first three wavefunctions for a particle in a box and explain the trend in energies using wavelength as an illustration. Explain how the spacing between adjacent levels changes as the quantum number increases.
+	\item Explain the concept of the \textbf{zero-point energy} in quantum mechanics.
+	\item Give a qualitative description of the \textbf{Quantum-Classical Correspondence Principle}, and illustrate the description with the probability distributions for a particle in a box at various values of $n$. 
+\end{itemize}
+\section*{Chapter 3 - Vibrational Motion}
+\begin{itemize}
+	\item Explain what a \textbf{harmonic oscillator} is using classical mechanics. Understand \textbf{Hooke's Law}, including the significance of the force constant, $k$.
+	\item Give an expression for the potential energy $V$, for a particle trapped in a \textbf{harmonic well}. Sketch how changing the value of $k$ will affect the resulting potential.
+	\item Give the Schr{\"o}dinger Equation for a \textbf{quantum harmonic oscillator}. Quote the expression for the \textbf{vibrational energy levels}. Explain the significance of $\omega$, with reference to both $k$ and $m$. 
+	\item Sketch the first few vibrational energy levels in a sketch of a harmonic potential. Explain how the \textbf{level spacing} differs from a particle in a one dimensional box.
+	\item Identify the \textbf{normalisation constant}, \textbf{Hermite Polynomial}, and \textbf{Gaussian Function} in a given general vibrational wavefunction. 
+	\item Sketch the first few vibrational wavefunctions and their probability distributions, using the sketches to illustrate both \textbf{the Quantum-Classical Correspondence Principle} and the \textbf{zero-point energy.}
+	\item Explain the vibrational zero point energy in terms of a \textbf{classical pendulum}.
+\end{itemize}
+\section*{Chapter 4 - Rotational Motion}
+\begin{itemize}
+	\item Define \textbf{angular momentum}, \textbf{angular velocity}, and \textbf{moment of inertia} in classical terms. Contrast them to their linear analogues. Explain how angular momentum depends on moment of inertia.
+	\item Give expressions for \textbf{rotational and translational kinetic energy}, in terms of both \textbf{velocity} and \textbf{momentum}.
+	\item Sketch the \textbf{particle on a ring} system, and explain how the Hamiltonian is constructed in comparison to the translational Hamiltonian. 
+	\item Verify that given wavefunctions are eigenfunctions of the given Hamiltonian, and produce the energy eigenvalues. Explain the significance of the quantity $m_l\hbar$ in comparison to $k\hbar$ from translations.
+	\item Explain qualitatively the meaning of the \textbf{cyclic boundary condition}. Show mathematically that this leads to \textbf{quantised angular momentum}.
+	\item Explain the additional complexities that arise when moving from a \textbf{particle on a ring} to a \textbf{particle on a sphere}. 
+	\item State that the wavefunctions for the particle on a sphere are given by the \textbf{Spherical Harmonics}. Explain the significance of the spherical harmonics in the context of \textbf{atomic orbitals}.
+	\item Explain the physical meanings of $l$ and $m_l$. Be able to give a reasonable sketch of \textbf{the vector model}, and explain how it demonstrates \textbf{quantised angular momentum}. 
+	\item State the allowed values for $l$ and $m_l$, and reflect on this in terms of \textbf{atomic orbitals}.
+	\item Give the expression for the energies of a particle on a sphere, and comment on this in relation to known expressions from rotational spectroscopy.
+\end{itemize}
+\section*{Chapter 5 - The Born-Oppenheimer Approximation}
+\begin{itemize}
+	\item Outline why \textbf{The Born-Oppenheimer Approximation} is necessary in chemistry, and explain what it is in terms of the separability of nuclear and electronic wavefunctions.
+	\item Explain in what circumstances we are able to invoke the Born-Oppenheimer Approximation, with a discussion of different \textbf{timescales} and \textbf{energies}. 
+	\item Describe how the Born-Oppenheimer Approximation allows molecular potential energy curves to be calculated.
+	\item Explain why, as spectroscopists, we are able to \textbf{extend} the Born-Oppenheimer Approximation to encompass all different modes of molecular motion (translation, rotation, vibration, and electronic). 
+	\item State how this allows us to separate the \textbf{total molecular energy} into \textbf{constituent parts} from each type of molecular motion. Explain why this is useful for physical chemists.
+\end{itemize}
+\section*{Chapter 6 - Rotational and Vibrational Quantisation of Molecules}
+\begin{itemize}
+	\item Explain how spectroscopy can provide information about molecules by the \textbf{interaction of molecules and EM radiation}.
+	\item State the \textbf{Bohr Frequency Condition}, and explain all the terms in the equation.
+	\item State the expression for \textbf{rotational energy} in \textbf{wavenumbers}, and calculate \textbf{rotational constants} with given data.
+	\item Derive the expression for the \textbf{rotational line spacing}, and explain how it changes as $J$ increases.
+	\item State the \textbf{gross} and \textbf{specific} rotational \textbf{selection rules}. Qualitatively explain their origins.
+	\item Explain how the concept of the \textbf{reduced mass} allows diatomic molecules to be modelled as a simple \textbf{mass on a spring}. Calculate reduced masses using given data.
+	\item State the expression for \textbf{vibrational energy} in \textbf{wavenumbers}, and calculate the value of $\tilde{v}$ using given data.
+	\item Qualitatively explain the \textbf{limitations of the harmonic oscillator model}, and explain how using \textbf{anharmonicity} can get round them.
+	\item Sketch a \textbf{harmonic potential} and a \textbf{Morse potential}, showing the key differences, and explaining why a \textbf{Morse potential} is more accurate for molecules.
+	\item State the \textbf{gross} and \textbf{specific} vibrational \textbf{selection rules}. Explain qualitatively where they come from.
+\end{itemize}
+
+
+
+
+\end{document}
