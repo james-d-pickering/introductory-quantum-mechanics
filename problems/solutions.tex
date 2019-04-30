@@ -1,0 +1,197 @@
+\documentclass{memoir}[11pt,oneside,a4paper,openany]
+\PassOptionsToPackage{svgnames}{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\usepackage{nth}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\newenvironment{myexampleblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightGreen,colframe=DarkGreen,%
+    colbacklower=LimeGreen!75!LightGreen,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{myalertblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightCoral,colframe=DarkRed,%
+    colbacklower=Tomato!75!LightCoral,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{myblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightBlue,colframe=DarkBlue,%
+    colbacklower=DarkBlue!75!LightBlue,%
+    title=#1]}%
+    {\endtcolorbox}
+
+
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{*}{1}
+\checkandfixthelayout
+
+\setlength{\parskip}{0.3cm}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\chapter*{Solutions to Problems}
+\section*{Algebraic}
+\begin{enumerate}
+	\item 
+		\begin{enumerate}
+			\item Is an eigenfunction, eigenvalue $-\frac{a^2\hbar^2}{2m}$.
+			\item Is an eigenfunction, eigenvalue $\frac{a^2\hbar^2}{2m}$.
+			\item Not an eigenfunction.
+			\item Not an eigenfunction.
+			\item Is an eigenfunction, eigenvalue $-a^2$.
+		\end{enumerate}
+	\item
+		\begin{enumerate}
+			\item $N = \sqrt{\frac{5}{2}}$.
+			\item $N = \sqrt{\frac{2a}{\sqrt{\pi}}}$.
+			\item $N = \sqrt{a}$.
+		\end{enumerate}
+	\item
+		\begin{enumerate}
+			\item Operators commute.
+			\item Operators do not commute, commutator $2ax - ax^2$.
+			\item Operators commute.
+		\end{enumerate}
+	\item
+		\begin{enumerate}
+			\item The Hamiltonian here only contains a kinetic energy term. Total energy is given by $\frac{k^2\hbar^2}{2m}$.
+			\item The boundary condition is that $\Psi(0)=\Psi(L)=0$. This results in the only acceptable energies being given by $\frac{n^2h^2}{8mL^2}$, where $n = 1, 2, 3...$. A sketch of the graph of $\sin(kL)$ against $kL$ would illustrate that $kL = n\pi$ for acceptable wavefunctions.
+		\end{enumerate}
+	\item There are two ways this can be approached. The first method is noting that $F = -\frac{\mathrm{d}V(x)}{\mathrm{d}x}$. Integrating this expression directly leads to $V(x) = -\int F_R \mathrm{d}x$ which leads to the harmonic potential directly. The second method is to note that the work done by a particle experiencing force $F_R$ over a certain distance, $w$, is given by the integral of the force with respect to distance travelled $\mathrm{d}x$, $w = \int F_R \mathrm{d}x$. The potential energy would be equal to the work we would have to do on the particle in opposition to the work done by the particle, so $V = -w = -\int F_R \mathrm{d}x$. Integration then leads to the harmonic potential.
+	\item Newton's Second Law states that $F = ma$, or $F = m\frac{\mathrm{d}^2x(t)}{\mathrm{d}t^2}$. Hooke's Law states that $F = -k_fx(t)$. Equating the two and rearranging leads to:
+		\begin{equation}
+			\frac{\mathrm{d}^2x(t)}{\mathrm{d}t^2} = -\frac{k_f}{m} x(t)
+		\end{equation}
+		This is a standard second-order differential equation, and we can guess/look up that the solution will be some kind of wave $x(t) = A\sin(ft+\phi)$ where $f$ is the frequency, $\phi$ is a phase shift and $A$ is the amplitude. Plugging this solution in results in the frequency $f$ being given by $f = \frac{k_f}{m}$. Overall then the motion of the particle is described by:
+		\begin{equation}
+			x(t) = A\sin(\sqrt{\frac{k_f}{m}}t+\phi)
+		\end{equation}
+		Which is clearly sinusoidal, hence the name \emph{harmonic} motion.
+	\item The algebra here gets a bit messy but the interpretation of the results is straightforward. Simply differentiating wavefunctions twice leads to the energy coming out as $\frac{1}{2}\hbar\sqrt{\frac{k_f}{m}}$ and $\frac{3}{2}\hbar\sqrt{\frac{k_f}{m}}$ for the first and second allowed wavefunctions respectively. This is entirely in line with the expected result.
+	\item This was pretty much covered in the lecture handouts, the key is to note that $\mathrm{e}^{i\pi} = -1$. Then the boundary condition can be written as:
+		\begin{equation}
+			\mathrm{e}^{im_l\phi}=\mathrm{e}^{im_l\phi}\mathrm{e}^{2i\pi m_l}
+		\end{equation}
+	And therefore:
+		\begin{equation}
+		(\mathrm{e}^{i\pi})^{2m_l} = (-1)^{2m_l} = 1
+		\end{equation}
+		Which is only satisfied if $m_l = 0,\pm 1,\pm 2...$.
+	\item This is a bit of a beast of a question. The idea is to illustrate that often in physical chemistry, just thinking about the actual physical nature of the processes can save us a lot of difficult and tedious mathematics. It's more important to have this physical insight than to be able to power through a huge load of derivatives!
+		\begin{enumerate} 
+			\item Given the expression for the derivative of an arbitrary function $f$ with respect to $x$ (or $y$), the question is essentially just asking us to calculate $\frac{\partial r}{\partial x}$ and $\frac{\partial \phi}{\partial x}$ (and the equivalents with respect to $y$). We have expressions for $r$ and $\phi$ in terms of $x$ and $y$. The use of partial derivatives makes this a lot easier as we can hold all the $y$ terms constant as we differentiate with respect to $x$ and vice versa. You should find:
+				\begin{equation}
+					\frac{\partial r}{\partial x} = \frac{x}{r} = \cos\phi \qquad \qquad \frac{\partial r}{\partial y} = \frac{y}{r} = \sin\phi 
+				\end{equation}
+				And
+				\begin{equation}
+					\frac{\partial \phi}{\partial x} = -\frac{\sin\phi}{r} \qquad \qquad \frac{\partial \phi}{\partial y} = \frac{\cos \phi}{r}
+				\end{equation}
+			Plugging these expressions into the given chain rule results in the expression shown.
+			\item This part of the question takes literally forever and I won't write out every step. The trick is to notice that nearly every term gives you a product rule that you need to compute. When you do it right you'll find that the cross-derivative terms ($\frac{\partial}{\partial r \partial \phi}$)all cancel out. For example:
+				\begin{equation}
+					\frac{\partial}{\partial x}\frac{\partial f}{\partial x} = \cos^2\phi \frac{\partial^2f}{\partial r^2} - \frac{\sin\phi}{r}\frac{\partial}{\partial\phi}\bigg(\cos\phi\frac{\partial f}{\partial r}\bigg) - \cos\phi\frac{\partial}{\partial r}\bigg(\frac{\sin\phi}{r}\frac{\partial f}{\partial\phi}\bigg) + \frac{\sin\phi}{r}\frac{\partial}{\partial\phi}\bigg(\frac{\sin\phi}{r}\frac{\partial f}{\partial\phi}\bigg) 
+				\end{equation}
+		The final three terms all require use of product rules. Having done this, and done the equivalent for the $y$ terms, you can add them together and will find that:
+				\begin{equation} 
+					\frac{\partial^2f}{\partial x^2} + \frac{\partial^2f}{\partial y^2} = (\sin^2\phi + \cos^2\phi)\frac{\partial^2f}{\partial r^2} + (\cos^2\phi+\sin^2\phi)\frac{1}{r}\frac{\partial f}{\partial r} + (\cos^2\phi + \sin^2\phi)\frac{1}{r^2}\frac{\partial^2f}{\partial\phi^2}
+				\end{equation}
+				Which reduces to the answer given, as $\sin^2\phi + \cos^2\phi = 1$. 
+			\item Restricting ourselves to a fixed radius means that $r$ is  constant, this means that any derivative with respect to $r$ is zero, so the first two terms in the result from (b) disappear. Note then that $mr^2$ is simply the moment of inertia, $I$. 
+			\item Intuition about the difference between translational and rotational motion can let us skip all the maths in parts (a)-(c). In 1D translational motion, we are moving in one direction, and our kinetic energy is given by the second derivative of the wavefunction with respect to that direction. By analogy, if we are rotating on a ring, our energy will be given by the second derivative of the wavefunction with respect to the coordinate we are rotating around the ring with, which is $\phi$. The rotational analogue of the mass is the moment of inertia, $I$, so these can be directly swapped. 
+		\end{enumerate}	
+		\end{enumerate}
+\section*{Numerical}
+\begin{enumerate}
+	\item 
+		\begin{enumerate}
+			\item The molecule will absorb radiation that has an energy that matches the HOMO-LUMO gap, if the molecule absorbs part of the visible spectrum (i.e. if the HOMO-LUMO gap corresponds to a visible wavelength), then the remaining parts of the visible spectrum will be transmitted, and the molecule will look like the colour of the remaining parts. If the HOMO-LUMO gap corresponds to a red wavelength, the molecule will absorb red light, so will appear blue.
+			\item Each quantum state can hold two electrons, so the value of $n$ for the HOMO is $n=11$·
+			\item I'm looking for a calculation here. The top of the question says that we can model this molecule as a particle in a 1D box. If we know that $n=11$ and $L=\SI{18E-10}{m}$, then we can use the formula:
+				\begin{equation}
+					\Delta E = (2n+1)\frac{h^2}{8mL^2}
+				\end{equation}
+				Where $n$ is the quantum number of the lower state (HOMO), $m$ is the mass of an electron (\SI{9.1E-31}{\kilo\gram}), and $L$ is the length of the molecule from above. The energy gap $\Delta E = \SI{4.28E-19}{\joule} = \SI{2.6}{\electronvolt}$ which corresponds to a wavelength of $\SI{477}{\nano\metre}$. This is a blue wavelength, so the molecule will appear red.
+			\item To make it appear bright blue, we would need to alter the length such that the energy gap corresponds to a red wavelength. So we need to shrink the energy gap so it corresponds to a wavelength of about \SI{650}{\nano\metre}. This is about \SI{1.9}{\electronvolt} or \SI{3.04E-19}{\joule}. We can just rearrange the formula for $\Delta E$ to give $L$ as the subject, doing this would result in a value of $L$ of about \SI{2.1E-9}{\metre} or \SI{21}{\angstrom}. A longer box results in a smaller $\Delta E$ and a molecule that looks more blue, as expected. 
+			\item Firstly, \SI{532.3}{\nano\metre} is green, so the molecule would look reddish. We now know everything except our value of $n$, so rearranging our $\Delta E$ formula and plugging in the values given results in a value of $2n+1$ as 13. So $n = 6$. This is the quantum state of the HOMO, so there are 12 electrons in the molecule.  		
+		\end{enumerate}
+	\item 
+		\begin{enumerate}
+			\item The characteristic frequency, $\nu_{\text{vib.}}$, is given by $\frac{1}{2\pi}\sqrt{\frac{k_f}{m}}$. Plugging in the numbers given gives a characteristic frequency of \SI{4.2E13}{\hertz} or \SI{42}{\tera\hertz}.
+			\item The ZPE is given by $0.5h\nu_{\text{vib.}}$. The rest is just unit conversions. The ZPE = \SI{2.7E-20}{\joule} = \SI{0.17}{\electronvolt} = \SI{1370}{\per\centi\metre}.
+			\item As the system behaves as a harmonic oscillator, the level spacing is simply twice the ZPE, so is \SI{2740}{\per\centi\metre}.
+		\end{enumerate}
+	\item This question looks a bit horrendous but really just serves to help practice some numeracy and fluency converting units. I am aware this isn't how vibrational ladder climbing really works (I thought calculating the chirp of the driving pulse might be a bit much!). The photon energy from the laser is \SI{1.16}{\electronvolt}, or \SI{1.85E-19}{\joule}. This must equal $h\nu_{\text{vib.}}$ for the ladder climbing to work, so $\nu_{\text{vib.}}$ must be equal to \SI{280}{\tera\hertz}. Rearrangement of the formula for $\nu_{\text{vib.}}$ using a reduced mass of \SI{28}{\dalton} gives the force constant as \SI{138660}{\newton\per\metre} - which is pretty high!
+	\item We are given the bond length and told that both atoms are \ce{^35Cl}. The moment of inertia around an axis perpendicular to the bond is given by $I = 2m_{Cl}\bigg(\frac{r_{\ce{Cl2}}}{2}\bigg)^2$. Plugging in the values correctly gives a moment of inertia of \SI{1.097E-45}{\kg\metre\squared}. The formula for the rotational constant is given by $B = \frac{\hbar}{4\pi cI}$. This will give the rotational constant in $\si{\per\metre}$ as \SI{25.49}{\per\metre} - to convert this to wavenumbers simply divide by 100, so B is\SI{0.25}{\per\metre} in wavenumbers. 
+\end{enumerate}
+\section*{Qualitative/Discussion}
+\begin{enumerate}
+	\item The Born Intepretation states that the probability of finding a particle at any position $x$ in space is proportional to the square of the wavefunction that describes that particle at $x$. One can then integrate the probability distribution over all space, which provides a measure of the probability that the particle is located at any position in space. Clearly, this probability must be equal to 1. By then using the fact that if $\Psi$ is a solution to the SE, then so is $N\Psi$ (where $N$ is a number - the normalisation constant), we can simply select our value of $N$ such that the integral of the square of the wavefunction over all space is equal to one. The key here is the helpful consequence of eigenfunctions and eigenvalues - that $N\Psi$ is also a solution, if $\Psi$ is a solution.
+	\item Heisenberg's Uncertainty Principle states that it is impossible to measure position and momentum both simultaneously and precisely. The zero-point energy is the irremovable energy of a system in it's lowest quantum state. The best example to illustrate the link between this and the uncertainty principle is the translational zero-point energy. 
+
+		Consider a particle in a box which has exactly zero energy. If we know that the energy (and therefore momentum) of the particle is \textbf{exactly} zero, then we know the momentum with complete precision. If this is the case, then we cannot know anything about the position of the particle (due to HUP). However, this cannot be the case, because know that the particle is in the box! So we cannot have a completely precisely defined momentum, and hence our momentum cannot be exactly zero - therefore we have a zero-point energy, which is non-zero. Similar arguments apply to the harmonic oscillator. 
+	\item The boundary conditions are that the wavefunction must be zero at the point where the wall of the box starts. This is because the wavefunction must be zero inside the walls of the box (as there is infinite potential energy), and the wavefunction must be continuous. If the wavefunction was zero inside the walls, but was not zero at the point where the wall starts, there would be a step in the wavefunction on entering the wall. This is unacceptable, as the wavefunction then isn't differentiable. Hence, the boundary condition forces the wavefunction to be acceptable.
+	\item The energy spacing is given by:
+		\begin{equation}
+			\Delta E = (2n+1)\frac{h^2}{8mL^2}
+		\end{equation}
+		\begin{enumerate}
+			\item Increasing the length of the box will decrease the level spacing. You could say that the particle is getting `less quantised' if you were comfortable with taking some linguistic liberties. Decreasing the length of the box has the opposite effect.
+			\item Increasing the mass of the particle will also decrease the level spacing - heavier objects don't exhibit as much quantum behaviour (again taking a few liberties with language here). Refer to the de Broglie wavelength as a nice illustration - compare something like an orange with an electron.
+		\end{enumerate}
+	\item Sketch is trivial - it is clear that as the number of nodes increases the energy increases. You could think of this as the wavelength of the wavefunctions increasing - a good analogy is standing waves in a flute or something similar. The more half-wavelengths you can fit in the box, the higher the frequency, shorter the wavelength, and higher the energy.
+	\item A sketch is also useful here - or see the lecture handout. Higher quantum numbers produces more nodes and spreads out the probablity distribution across the box. At very high quantum numbers, the probability distribution is uniform - as is expected classically. 
+	\item Hooke's Law states that:
+		\begin{equation}
+			F_R = -k_f x
+		\end{equation}
+		Where $F_R$ is the restoring force, $k_f$ is the spring constant, and $x$ is the extension of the spring. It states that the restoring force experienced by an object displaced from equilibrium is proportional to how much it is displaced by. A real-world example is a spring. It would break down in the real world because eventually the spring would be stretched so much it would break. 
+	\item The SE for a 1D harmonic oscillator is given by:
+		\begin{equation}
+			-\frac{\hbar^2}{2m}\frac{\partial^2\Psi}{\partial x^2} + \frac{1}{2}k_fx^2\Psi = E\Psi
+		\end{equation}
+		The first term of this calculates the kinetic energy of the particle, with a mass $m$. The second term calculates the potential energy, which is simply the potential energy of a harmonic oscillator (obtained by integrating Hooke's Law). $k_f$ is the force constant of the oscillator. $E$ is the total energy of the system, an is a sum of the kinetic and potential energies. $\Psi$ is the vibrational wavefunction. $\hbar$ is the reduced Planck's constant.
+	\item The sketch is trivial - features I would want to note are a) the presence of a zero-point energy, and b) the uniform level spacing. You might also want to ask for sketches using tighter and looser potentials, to see how this affects the level spacing and ZPE. 
+	\item At low quantum numbers the sketch looks basically just like that for a particle in a box. As we increase the quantum number, the probability density becomes more and more strongly peaked at the edges of the well - this is exactly in line with how a classical harmonic oscillator behaves. A pendulum is the best example here - at the edges of the pendulum's swing, it's velocity is temporarily zero (as it changes sign). In the middle of the swing, it is travelling at its maximum velocity. As such, the pendulum spends most of its time at the edges of the travel - this is what the probability distributions reflect at high quantum numbers. Another example of the correspondence principle!
+	\item The cyclic boundary condition states that $\Psi(\phi) = \Psi(\phi+2\pi)$. It originates from the fact that the wavefunction $\Psi(\phi)$ will overlap itself every time it rotates through an angle of $2\pi$. Acceptable wavefunctions must be single-valued, and this means that the wavefunction at $\phi$ must equal the wavefunction at $\phi+2\pi$. If this were not the case, then the wavefunction would have two values at $\phi$, which is unacceptable. 
+	\item The two expressions are:
+		\begin{equation}
+			E_T = \frac{(n\hbar)^2}{2m} \qquad \qquad E_R = \frac{(m_l\hbar)^2}{2I}
+		\end{equation}
+		Where $n=1,2,3...$ and $m_l=0,\pm1,\pm2...$. The similarities are the form of the expressions: (some kind of momentum squared)/(some kind of mass). The differences are the mass vs moment of inertia, and $m_l$ vs $n$. Clearly, $m_l\hbar$ and $n\hbar$ must be related to momentum (think of the classical expression for kinetic energy). Going further, we would see that $n\hbar$ is related to linear momentum and $m_l\hbar$ is related to angular momentum. It would also appear that we are not allowed to have negative quantum numbers for the particle in a box case, although this is not strictly true. A negative quantum number would suggest momentum in the opposite direction to a positive one (in the same way that different signs of $m_l$ correspond to different directions of rotation around the ring). This is fine for $n$, but a negative value of $n$ doesn't create a new state of the particle (unlike a negative $m_l$), so is not normally included in the definition - this is due to the wavefunction being a sine function which includes both $n$ and $-n$ if it is written as exponentials. This is probably too much detail - but it's a nice discussion question!
+
+	\item An electron floating around an atom can be modelled as a particle on a sphere. The solutions to the SE for this system are just the spherical harmonics. We know that the atomic orbitals are just the wavefunctions of the electrons in atoms, and that the wavefunctions are the spherical harmonics, so they must also be the atomic orbitals. The form of the spherical harmonics is $Y_{l,m_l}(\theta,\phi)$, where $l$ and $m_l$ are the familiar quantum numbers from atomic structure. Each $l$ level has $2l+1$ degenerate $m_l$ states - $l=0$ is an s-orbital, with one state, $l=1$ is a p-orbital, with 3 states, and so on. 
+	\item $l$ is the total angular momentum quantum number, and $m_l$ is the projection of this quantum number onto the space-fixed $z$ axis. The vector model sketch provides a very nice way to visualise this. For each $l$ state, there are $2l+1$ possible directions for $m_l$ to point in. The total angular momentum vector can be thought of as a vector of length $l$ lying along the surface of a cone, the angle between this vector and the $z$ axis depends on the specific $m_l$ state. Finding a drawing or the figure from the handout makes it a lot easier to explain!
+	\item The BOA allows the nuclear and electronic motion to be separated, so the SE can be solved for a specific nuclear configuration. Repeating this process for many nuclear configurations allows a potential energy surface to be built up, which would be impossible to do in one step as the system is far too complex. As spectroscopists, we can extend the BOA and say that the translational, rotational, vibrational, and electronic contributions to the total energy are separable, that is:
+		\begin{equation}
+			\Psi_{Tot} = \Psi_{Trans.}\Psi_{Rot.}\Psi_{Vib.}\Psi_{Elec.}
+		\end{equation}
+		This allows the contributions that each of these motions make to the energy to be written as:
+		\begin{equation}
+			E_{Tot} = E_{Trans.} + E_{Rot.} + E_{Vib.} + E_{Elec.}
+		\end{equation}
+		So we can consider each contribution to the total energy separately. This makes life a lot easier for us as spectroscopists!
+
+\end{enumerate}
+
+\end{document}

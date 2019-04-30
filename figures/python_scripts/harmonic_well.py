@@ -52,4 +52,4 @@ ax2.text(0,0.525,r'(b)', va='center', ha='center')
 plt.legend(prop={'size':10})
 
 
-plt.savefig('harmonic_well.png', bbox_inches='tight', dpi=300)
+plt.savefig('harmonic_well.png', bbox_inches='tight', dpi=400)

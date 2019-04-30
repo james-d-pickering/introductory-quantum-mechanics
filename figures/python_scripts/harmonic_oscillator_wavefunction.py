@@ -17,7 +17,7 @@ plt.rc('font', family='sans-serif',size='12')
 
 plt.close('all')
 plt.figure()
-grid = gs.GridSpec(nrows=1, ncols=3)
+grid = gs.GridSpec(nrows=1, ncols=2)
 ax = plt.subplot(grid[0,0])
 v=0
 m = 1
@@ -28,16 +28,13 @@ N = (a/((2**v)*np.math.factorial(v)*np.sqrt(np.pi)))**0.5
 H = 1
 x = np.linspace(-4,4,400)
 wf_1 = N*H*np.exp(-((a*x)**2)/2)
-v=5
+v=1
 N = (a/((2**v)*np.math.factorial(v)*np.sqrt(np.pi)))**0.5
 H = 2*x*a
 wf_2 = N*H*np.exp(-((a*x)**2)/2)
-v=100
-N = (a/((2**v)*np.math.factorial(v)*np.sqrt(np.pi)))**0.5
-H = 4*(x*a)**2 - 2
-wf_3 = N*H*np.exp(-((a*x)**2)/2)
 
-plt.plot(x, wf_1**2, label=r'v=0')
+
+
 
 #plt.plot(x, wf_3, label=r'v=2')
 plt.grid()
@@ -48,40 +45,33 @@ plt.legend(frameon=True)
 #axis3 = lines.Line2D([0,1],[0,0],lw=1,color='k')
 #ax.add_artist(axis3)
 
-
-plt.xlabel(r'$x$',)
+ax = plt.subplot(grid[0,0])
+plt.plot(x, wf_1, label=r'v=0')
+plt.plot(x, wf_2, label=r'v=1')
+plt.xlabel(r'$x = r-r_e$',)
 plt.ylabel(r'Wavefunction, $\Psi(x)$')
 plt.xlim(-4,4)
 plt.ylim(-0.8,0.8)
+plt.legend()
 #ax.fill_between([0,0.15],[-1,-1],[1,1],color='xkcd:dark orange',alpha=0.8)
 #ax.fill_between([0.85,1],[-1,-1],[1,1],color='xkcd:dark orange',alpha=0.8)
 
 ax = plt.subplot(grid[0,1])
-plt.plot(x, wf_2**2, label=r'v=5')
+plt.plot(x, wf_1**2, label=r'v=1')
+plt.plot(x, wf_2**2, label=r'v=2')
 plt.ylabel(r'Probability Density, $\Psi^2(x)$')
-plt.xlabel(r'$x$')
+plt.xlabel(r'$x = r-r_e$')
 plt.grid()
 ax.yaxis.set_label_position('right')
 ax.yaxis.tick_right()
 v = 0.5*k*(x**2)
 v = v/np.max(v)
 #¤plt.plot(x, v)
-plt.ylim(0,0.6)
 plt.xlim(-3,3)
+plt.ylim(0,0.6)
+
 plt.legend()
 
-ax = plt.subplot(grid[0,2])
-plt.plot(x, wf_3**2, label=r'v=100')
-plt.ylabel(r'Probability Density, $\Psi^2(x)$')
-plt.xlabel(r'$x$')
-plt.grid()
-ax.yaxis.set_label_position('right')
-ax.yaxis.tick_right()
-v = 0.5*k*(x**2)
-v = v/np.max(v)
-#¤plt.plot(x, v)
-plt.ylim(0,0.6)
-plt.xlim(-3,3)
-plt.legend()
 
-plt.savefig('harmonic_oscillator_probabilities.png',bbox_inches='tight')
+
+plt.savefig('../final_figures/harmonic_oscillator_wf.png',dpi=400,bbox_inches='tight')

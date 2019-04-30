@@ -33,4 +33,4 @@ eng_str = ['0B','2B','6B','12B','20B','30B']
 plt.xticks([])
 plt.yticks(eng,eng_str)
 plt.ylabel(r'Energy (units of B)')
-plt.savefig('rotational_energy_levels.png', bbox_inches='tight', dpi=200)
+plt.savefig('../final_figures/rotational_energy_levels.png', bbox_inches='tight', dpi=400)

@@ -1,0 +1,165 @@
+\documentclass{memoir}[11pt,oneside,a4paper,openany]
+\PassOptionsToPackage{svgnames}{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\usepackage{nth}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\newenvironment{myexampleblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightGreen,colframe=DarkGreen,%
+    colbacklower=LimeGreen!75!LightGreen,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{myalertblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightCoral,colframe=DarkRed,%
+    colbacklower=Tomato!75!LightCoral,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{myblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightBlue,colframe=DarkBlue,%
+    colbacklower=DarkBlue!75!LightBlue,%
+    title=#1]}%
+    {\endtcolorbox}
+
+
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{*}{1}
+\checkandfixthelayout
+
+\setlength{\parskip}{0.3cm}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\chapter*{Course Problems}
+The problems below are grouped into three sections, \emph{algebraic}, \emph{numerical}, and \emph{qualitative}. The idea is that you are free to pick and choose relevant problems for your tutorial sheet/problem class. 
+\section*{Algebraic}
+\begin{enumerate}
+	\item Determine whether or not the following wavefunctions $\Psi(x)$ (a)-(c) are \emph{eigenfunctions} of the following Hamiltonian
+		\begin{equation} \hat{H} = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} \end{equation} and if so, determine the corresponding eigenvalues.
+	\begin{enumerate}
+		\item $\Psi(x) = \mathrm{e}^{(ax)}$
+		\item $\Psi(x) = \sin(ax)$
+		\item $\Psi(x) = \mathrm{e}^{(ax^2)}$
+		\item $\Psi(x) = x^2+3$
+		\item $\Psi(x) = \sin(ax) + \cos(ax)$
+	\end{enumerate}
+\item Normalise the following wavefunctions $\phi(x)$ between the limits given (find the value of N). In all cases $a>0$. Note that looking up the values of standard integrals is perfectly allowable for (b) and (c)! 
+	\begin{enumerate}
+		\item $\phi(x) = -Nx^2$ between -1 and 1.
+		\item $\phi(x) = N\mathrm{e}^{-(ax)}$ between 0 and $\infty$. 
+		\item $\phi(x) = N\mathrm{e}^{-(\sqrt{ax})}$ between 0 and $\infty$.
+	\end{enumerate}
+\item Determine whether or not the following pairs of operators \emph{commute} or not. If they do not, give the value of the \emph{commutator}.
+	\begin{enumerate}
+		\item $\hat{A} = x$ and $\hat{B} = x^2$.
+		\item $\hat{C} = \frac{\mathrm{d}}{\mathrm{d}x}$ and $\hat{D} = ax^2$.
+		\item $\hat{E} = y^2$ and $\hat{F} = \sin(t)$.
+	\end{enumerate}
+\item 
+	\begin{enumerate} 
+		\item Using the wavefunction $\Psi(x) = A\sin(kx)+B\cos(kx)$, find an expression for the total energy of a particle of mass $m$ free to move in one dimension (along $x$).
+		\item State the \textbf{boundary condition} we have to apply if we restrict the particle to only existing in a box of length $L$. Show how application of this boundary condition results in \emph{quantisation} of the energies of the particle.
+	\end{enumerate}
+\item Show how the harmonic potential, $V(x) = 0.5k_fx^2$, can be derived from Hooke's Law, $F_R = -k_fx$. State explicitly why the potential is positive while the force is negative. 
+
+\item By equating Newton's Second Law and Hooke's Law, show that the time dependent motion $x(t)$ of a particle undergoing harmonic motion is described by a sinusoidal function. 
+
+\item (Hard) The allowed wavefunctions for a harmonic oscillator are given by: \begin{equation} \Psi(\alpha x) = H_v(\alpha x)\exp{\bigg(-\frac{(\alpha x)^2}{2}\bigg)} \end{equation} where $\alpha = \bigg(\frac{mk_f}{\hbar^2}\bigg)^{\frac{1}{4}}$. The first two Hermite Polynomials are $H_0(\alpha x) = 1$ and $H_1(\alpha x) = 2\alpha x$. Show that the first two vibrational wavefunctions are eigenfunctions of the Hamiltonian: \begin{equation} \hat{H} = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + \frac{1}{2}k_f x \end{equation} and determine the corresponding eigenvalues. Comment on the values of the eigenvalues. 
+	
+\item By applying the cyclic boundary condition ($\Psi(\phi) = \Psi(\phi+2\pi)$) to the wavefunction $\Psi = \mathrm{e}^{(im_l\phi)}$, show that the acceptable values for the quantum number $m_l$ are $m_l = 0, \pm1, \pm2, \pm3..$.
+
+\item (v Hard) There are two key skills in physical chemistry, being able to have a physical understanding of the physical/chemical processes involved, and being able to do the mathematics that underlies them. The first skill is more important than the second, and it is often more useful. This is a long question which will demonstrate this. 
+
+The problem we are going to solve is as follows. The Hamiltonian for a particle confined to a ring in the $xy$ plane is, in Cartesian coordinates, given by:
+		\begin{equation}
+			\hat{H} = -\frac{\hbar^2}{2m}\bigg(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}\bigg)
+		\end{equation}
+Where $m$ is the mass of the particle. However, it is often easier to work with this Hamiltonian in polar coordinates. In this case:
+		\begin{equation}
+			\hat{H} = -\frac{\hbar^2}{2I}\frac{\partial^2}{\partial\phi^2}
+		\end{equation}
+Here, $I$ is the moment of inertia of the rotating system, and $\phi$ is the angle of rotation. We can derive the polar Hamiltonian from the Cartesian Hamiltonian in two ways. Mathematically, we can perform a coordinate transformation and move from Cartesian to polar. Alternatively, thinking about the two systems could allow us to simply make some substitutions and arrive at the polar Hamiltonian directly.
+
+Firstly, let's do the mathematical derivation. The following set of questions will guide you through this. Note that the two coordinate systems are related by $x = r\cos(\phi)$, $y = r\sin(\phi)$, $r = \sqrt{x^2+y^2}$, and $\phi = \arctan(y/x)$.
+		\begin{enumerate}
+			\item The derivative, $\frac{\partial f}{\partial x}$, of a function $f(x)$ where $x=f(r,\phi)$ is given by: \begin{equation} \frac{\partial f}{\partial x} = \frac{\partial f}{\partial r}\frac{\partial r}{\partial x} + \frac{\partial f}{\partial\phi}\frac{\partial\phi}{\partial x} \end{equation} This is an extension of the chain rule to two variables. Show that for our coordinate transformation: \begin{equation} \frac{\partial f}{\partial x} = \cos\phi\frac{\partial f}{\partial r} - \frac{\sin\phi}{r}\frac{\partial f}{\partial\phi} \end{equation} and that: \begin{equation} \frac{\partial f}{\partial y} = \sin\phi\frac{\partial f}{\partial r} + \frac{\cos\phi}{r}\frac{\partial f}{\partial\phi} \end{equation}
+The partial derivatives make this easier as you can hold any variable constant that isn't the one that you are differentiating by!
+		\item We need to calculate the second derivatives for our Hamiltonian. Show that by calculating:
+			\begin{equation}
+				\frac{\partial^2}{\partial x^2} = \frac{\partial}{\partial x}\frac{\partial f}{\partial x} = (\cos\phi\frac{\partial}{\partial r}-\frac{\sin\phi}{r}\frac{\partial}{\partial\phi})(\cos\phi\frac{\partial f}{\partial r}-\frac{\sin\phi}{r}\frac{\partial f}{\partial\phi})
+			\end{equation}
+		Together with the equivalent for $\frac{\partial}{\partial y}$, and adding the two results together, the following result is obtained:
+			\begin{equation} 
+				\frac{\partial^2f}{\partial x^2} + \frac{\partial^2f}{\partial y^2} = \frac{\partial^2f}{\partial r^2} + \frac{1}{r}\frac{\partial f}{\partial r} + \frac{1}{r^2}\frac{\partial^2f}{\partial\phi^2} 
+			\end{equation}
+		\item By restricting ourselves to a fixed radius, show that the result obtained in part b) reduces down to our final polar Hamiltonian.
+		\item Now we will do an easier derivation. Think about what you know about rotational motion, and explain how the polar Hamiltonian can be easily constructed by comparison to the Cartesian Hamiltonian, without doing all the mathematics of steps (a)-(c).
+ \end{enumerate}
+
+ \end{enumerate}
+
+\section*{Numerical}
+\begin{enumerate}
+\item An electron in a long conjugated aromatic molecule, such as $\beta$-carotene, can be modelled as a particle in a 1D box. These molecules are often colourful because the wavelength corresponding to the energy gap between the HOMO and LUMO is often in the visible region of the EM spectrum. 
+\begin{enumerate}
+	\item Explain why the HOMO-LUMO gap having an energy that corresponds to a visible wavelength makes a molecule look coloured. If the HOMO-LUMO gap corresponded to a red wavelength, would the molecule look red or blue?
+	\item $\beta$-carotene has 22 electrons in it's conjugated system. Draw an energy level diagram to determine what quantum state the HOMO is (i.e. what is the value of $n$ for the HOMO). Each energy level can contain two electrons.
+	\item The length of the molecule is about \SI{18}{\angstrom}, explain quantitatively why it appears red to human eyes.
+	\item In a fictional world where we could stretch molecules without altering their electronic structure, what length would a molecule like $\beta$-carotene need to be if we wanted it to appear bright blue? Assume that the HOMO is the same as in part (b). Comment on the length of this in relation to the length given in (c). 
+	\item Some spectroscopists have measured that the wavelength of the first electronic transition in a long conjugated molecule is \SI{532.3}{\nano\metre}. What colour is this? They know that the length of the molecule is around \SI{15}{\angstrom} - what quantum state corresponds to the HOMO? Assuming each quantum state can hold two electrons, how many electrons are in the molecule?
+\end{enumerate}
+\item A helium nucleus (mass \SI{4}{\dalton}) has been attached to a wall by a spring with a force constant of \SI{450}{\newton\per\metre}. It behaves as a harmonic oscillator. What is:
+	\begin{enumerate}
+		\item The characteristic frequency ($\nu_{\text{vib.}}$) of the oscillator this system creates?
+		\item The vibrational zero-point energy of this system in (i) joules, (ii) eV, (iii) wavenumbers?
+		\item The vibrational level spacing of this system in wavenumbers?
+	\end{enumerate}
+\item `Vibrational ladder climbing' is a technique whereby absorption of successive photons allows a molecule to be excited to high vibrational states. In a harmonic oscillator, the spacing between adjacent levels is constant, and to climb the ladder the wavelength of the photon needs to exactly match the level spacing. I have a laser which emits light at \SI{1064}{\nano\metre}, I want to climb a vibrational ladder of a diatomic molecule with an effective mass of \SI{28}{\dalton}. What is the force constant of the bond required to be so that I can successfully climb the ladder?
+\item The bond length of a \ce{^35Cl2} molecule is \SI{1.98}{\angstrom}. Calculate a) the moment of inertia of the molecule, and b) the rotational constant, $B$, in wavenumbers. Note that you need to calculate the moment of inertia and rotational constant around an axis perpendicular to the bond axis. Pay careful attention to units!
+
+\end{enumerate}
+\section*{Qualitative/Discussion}
+\begin{enumerate}
+	\item State the \emph{Born Interpretation} of the wavefunction, and discuss why it is useful when normalising wavefunctions.
+	\item Describe \emph{Heisenberg's Uncertainty Principle}, and explain how it leads to the concept of a zero-point energy in certain quantum systems.
+	\item Explain the origins of the boundary conditions for a particle in a 1D box, with reference to how they ensure that the wavefunctions will be acceptable.
+	\item State the expression for the energy spacing $\Delta E$ of two adjacent levels of a particle of mass $m$ in a 1D box of length $L$. Discuss how the energy spacing changes with:
+	\begin{enumerate}
+		\item Increasing or decreasing the length of the box.
+		\item Increasing or decreasing the mass of the particle.
+	\end{enumerate}
+	\item Sketch the first three acceptable wavefunctions for a particle in a 1D box. Discuss the energy ordering of the wavefunctions with reference to the the \emph{wavelength} of the acceptable wavefunctions.
+	\item Discuss how the probability density of the particle in a 1D box changes as the particle occupies higher and higher quantum states. What happens at very high quantum states (such as $n=500$)?
+	\item State \emph{Hooke's Law} and define all terms. Explain why Hooke's Law is an approximation (under what real-world conditions would it break down?). .
+	\item Write down the Schr{\"o}dinger Equation for a 1D harmonic oscillator, defining all terms used. 
+	\item Sketch the first few allowed energy levels for a quantum mechanical harmonic oscillator, pointing out features of note.
+	\item Sketch the probability distributions for a particle trapped in a harmonic well at low and high quantum numbers. Comment on the sketches, mentioning the expected behaviour of a classical harmonic oscillator. Discuss the vibrational zero-point energy. 
+	\item State the \emph{cyclic boundary condition} for a particle confined to a ring. Explain the origin of this boundary condition. How does it ensure that the wavefunction will be acceptable?
+	\item Compare the expression for the kinetic energy of a particle on a ring to the expression for the kinetic energy of a particle in a box. What are the similarities and differences? Can you draw any parallels between the quantum numbers $n$ and $m_l$?
+	\item Explain how the shapes of the atomic orbitals are related to the spherical harmonics.
+	\item Qualitatively describe the meanings of the two angular momentum quantum numbers, $l$ and $m_l$. Include a sketch of the vector model in your answer. 
+	\item Explain why the Born-Oppenheimer approximation is so useful in quantum chemistry. Include a description of how it allows the total energy of the molecule to be broken down. 
+	
+
+
+\end{enumerate}
+\end{document}

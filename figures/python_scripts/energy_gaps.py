@@ -33,9 +33,9 @@ ax.add_artist(arrow2)
 
 plt.text(-0.2,0.25,r'Absorption',color='b',ha='center',va='center')
 plt.text(1.2,0.25,r'Emission',color='r',ha='center',va='center')
-plt.text(0.5,0.1,r'$\hbar\omega = \Delta E = E_2-E_1$',color='k',ha='center',va='center')
+plt.text(0.5,0.1,r'$h\nu = \Delta E = E_2-E_1$',color='k',ha='center',va='center')
 
 arrow3 = patch.FancyArrowPatch((0.4,0.2),(0.4,0.8),arrowstyle='|-|',mutation_scale=5,color='k',ls='-',alpha=0.5)
 ax.add_artist(arrow3)
-plt.text(0.5,0.5,r'$\hbar\omega$',color='k',ha='center',va='center')
-plt.savefig('energy_gap.png', bbox_inches='tight', dpi=200)
+plt.text(0.5,0.5,r'$h\nu$',color='k',ha='center',va='center')
+plt.savefig('../final_figures/energy_gap.png', bbox_inches='tight', dpi=400)

@@ -43,4 +43,4 @@ plt.ylim(-1,1)
 ax.fill_between([0,0.15],[-1,-1],[1,1],color='xkcd:dark orange',alpha=0.8)
 ax.fill_between([0.85,1],[-1,-1],[1,1],color='xkcd:dark orange',alpha=0.8)
 
-plt.savefig('particle_in_box_wf.png',bbox_inches='tight')
+plt.savefig('../final_figures/particle_in_box_wf.png',bbox_inches='tight',dpi=400)

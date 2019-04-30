@@ -46,4 +46,4 @@ plt.xlabel(r'$r-r_e$')
 plt.yticks([])
 
 plt.ylabel(r'Energy [$\hbar \omega$]')
-plt.savefig('morse_potential.png',bbox_inches='tight',dpi=600)
+plt.savefig('../final_figures/morse_potential.png',bbox_inches='tight',dpi=400)

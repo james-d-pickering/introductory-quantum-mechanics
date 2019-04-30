@@ -1,0 +1,152 @@
+\documentclass{memoir}[11pt,oneside,a4paper,openany]
+\PassOptionsToPackage{svgnames}{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{mhchem}
+\usepackage{nth}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usetikzlibrary{shadings,shadows}
+
+\newenvironment{myexampleblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightGreen,colframe=DarkGreen,%
+    colbacklower=LimeGreen!75!LightGreen,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{myalertblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightCoral,colframe=DarkRed,%
+    colbacklower=Tomato!75!LightCoral,%
+    title=#1]}%
+    {\endtcolorbox}
+
+\newenvironment{myblock}[1]{%
+    \tcolorbox[beamer,%
+    noparskip,breakable,
+    colback=LightBlue,colframe=DarkBlue,%
+    colbacklower=DarkBlue!75!LightBlue,%
+    title=#1]}%
+    {\endtcolorbox}
+
+
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{*}{1}
+\checkandfixthelayout
+
+\setlength{\parskip}{0.3cm}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\chapter*{Solutions to Problems}
+\section*{Algebraic}
+\begin{enumerate}
+	\item 
+		\begin{enumerate}
+			\item Is an eigenfunction, eigenvalue $-\frac{a^2\hbar^2}{2m}$.
+			\item Is an eigenfunction, eigenvalue $\frac{a^2\hbar^2}{2m}$.
+			\item Not an eigenfunction.
+			\item Not an eigenfunction.
+			\item Is an eigenfunction, eigenvalue $-a^2$.
+		\end{enumerate}
+	\item
+		\begin{enumerate}
+			\item $N = \sqrt{\frac{5}{2}}$.
+			\item $N = \sqrt{\frac{2a}{\sqrt{\pi}}}$.
+			\item $N = \sqrt{a}$.
+		\end{enumerate}
+	\item
+		\begin{enumerate}
+			\item Operators commute.
+			\item Operators do not commute, commutator $2ax - ax^2$.
+			\item Operators commute.
+		\end{enumerate}
+	\item
+		\begin{enumerate}
+			\item The Hamiltonian here only contains a kinetic energy term. Total energy is given by $\frac{k^2\hbar^2}{2m}$.
+			\item The boundary condition is that $\Psi(0)=\Psi(L)=0$. This results in the only acceptable energies being given by $\frac{n^2h^2}{8mL^2}$, where $n = 1, 2, 3...$. A sketch of the graph of $\sin(kL)$ against $kL$ would illustrate that $kL = n\pi$ for acceptable wavefunctions.
+		\end{enumerate}
+	\item There are two ways this can be approached. The first method is noting that $F = -\frac{\mathrm{d}V(x)}{\mathrm{d}x}$. Integrating this expression directly leads to $V(x) = -\int F_R \mathrm{d}x$ which leads to the harmonic potential directly. The second method is to note that the work done by a particle experiencing force $F_R$ over a certain distance, $w$, is given by the integral of the force with respect to distance travelled $\mathrm{d}x$, $w = \int F_R \mathrm{d}x$. The potential energy would be equal to the work we would have to do on the particle in opposition to the work done by the particle, so $V = -w = -\int F_R \mathrm{d}x$. Integration then leads to the harmonic potential.
+	\item Newton's Second Law states that $F = ma$, or $F = m\frac{\mathrm{d}^2x(t)}{\mathrm{d}t^2}$. Hooke's Law states that $F = -k_fx(t)$. Equating the two and rearranging leads to:
+		\begin{equation}
+			\frac{\mathrm{d}^2x(t)}{\mathrm{d}t^2} = -\frac{k_f}{m} x(t)
+		\end{equation}
+		This is a standard second-order differential equation, and we can guess/look up that the solution will be some kind of wave $x(t) = A\sin(ft+\phi)$ where $f$ is the frequency, $\phi$ is a phase shift and $A$ is the amplitude. Plugging this solution in results in the frequency $f$ being given by $f = \frac{k_f}{m}$. Overall then the motion of the particle is described by:
+		\begin{equation}
+			x(t) = A\sin(\sqrt{\frac{k_f}{m}}t+\phi)
+		\end{equation}
+		Which is clearly sinusoidal, hence the name \emph{harmonic} motion.
+	\item The algebra here gets a bit messy but the interpretation of the results is straightforward. Simply differentiating wavefunctions twice leads to the energy coming out as $\frac{1}{2}\hbar\sqrt{\frac{k_f}{m}}$ and $\frac{3}{2}\hbar\sqrt{\frac{k_f}{m}}$ for the first and second allowed wavefunctions respectively. This is entirely in line with the expected result.
+	\item This was pretty much covered in the lecture handouts, the key is to note that $\mathrm{e}^{i\pi} = -1$. Then the boundary condition can be written as:
+		\begin{equation}
+			\mathrm{e}^{im_l\phi}=\mathrm{e}^{im_l\phi}\mathrm{e}^{2i\pi m_l}
+		\end{equation}
+	And therefore:
+		\begin{equation}
+		(\mathrm{e}^{i\pi})^{2m_l} = (-1)^{2m_l} = 1
+		\end{equation}
+		Which is only satisfied if $m_l = 0,\pm 1,\pm 2...$.
+	\item This is a bit of a beast of a question. The idea is to illustrate that often in physical chemistry, just thinking about the actual physical nature of the processes can save us a lot of difficult and tedious mathematics. It's more important to have this physical insight than to be able to power through a huge load of derivatives!
+		\begin{enumerate} 
+			\item Given the expression for the derivative of an arbitrary function $f$ with respect to $x$ (or $y$), the question is essentially just asking us to calculate $\frac{\partial r}{\partial x}$ and $\frac{\partial \phi}{\partial x}$ (and the equivalents with respect to $y$). We have expressions for $r$ and $\phi$ in terms of $x$ and $y$. The use of partial derivatives makes this a lot easier as we can hold all the $y$ terms constant as we differentiate with respect to $x$ and vice versa. You should find:
+				\begin{equation}
+					\frac{\partial r}{\partial x} = \frac{x}{r} = \cos\phi \qquad \qquad \frac{\partial r}{\partial y} = \frac{y}{r} = \sin\phi 
+				\end{equation}
+				And
+				\begin{equation}
+					\frac{\partial \phi}{\partial x} = -\frac{\sin\phi}{r} \qquad \qquad \frac{\partial \phi}{\partial y} = \frac{\cos \phi}{r}
+				\end{equation}
+			Plugging these expressions into the given chain rule results in the expression shown.
+			\item This part of the question takes literally forever and I won't write out every step. The trick is to notice that nearly every term gives you a product rule that you need to compute. When you do it right you'll find that the cross-derivative terms ($\frac{\partial}{\partial r \partial \phi}$)all cancel out. For example:
+				\begin{equation}
+					\frac{\partial}{\partial x}\frac{\partial f}{\partial x} = \cos^2\phi \frac{\partial^2f}{\partial r^2} - \frac{\sin\phi}{r}\frac{\partial}{\partial\phi}\bigg(\cos\phi\frac{\partial f}{\partial r}\bigg) - \cos\phi\frac{\partial}{\partial r}\bigg(\frac{\sin\phi}{r}\frac{\partial f}{\partial\phi}\bigg) + \frac{\sin\phi}{r}\frac{\partial}{\partial\phi}\bigg(\frac{\sin\phi}{r}\frac{\partial f}{\partial\phi}\bigg) 
+				\end{equation}
+		The final three terms all require use of product rules. Having done this, and done the equivalent for the $y$ terms, you can add them together and will find that:
+				\begin{equation} 
+					\frac{\partial^2f}{\partial x^2} + \frac{\partial^2f}{\partial y^2} = (\sin^2\phi + \cos^2\phi)\frac{\partial^2f}{\partial r^2} + (\cos^2\phi+\sin^2\phi)\frac{1}{r}\frac{\partial f}{\partial r} + (\cos^2\phi + \sin^2\phi)\frac{1}{r^2}\frac{\partial^2f}{\partial\phi^2}
+				\end{equation}
+				Which reduces to the answer given, as $\sin^2\phi + \cos^2\phi = 1$. 
+			\item Restricting ourselves to a fixed radius means that $r$ is  constant, this means that any derivative with respect to $r$ is zero, so the first two terms in the result from (b) disappear. Note then that $mr^2$ is simply the moment of inertia, $I$. 
+			\item Intuition about the difference between translational and rotational motion can let us skip all the maths in parts (a)-(c). In 1D translational motion, we are moving in one direction, and our kinetic energy is given by the second derivative of the wavefunction with respect to that direction. By analogy, if we are rotating on a ring, our energy will be given by the second derivative of the wavefunction with respect to the coordinate we are rotating around the ring with, which is $\phi$. The rotational analogue of the mass is the moment of inertia, $I$, so these can be directly swapped. 
+		\end{enumerate}	
+		\end{enumerate}
+\section*{Numerical}
+\begin{enumerate}
+	\item 
+		\begin{enumerate}
+			\item The molecule will absorb radiation that has an energy that matches the HOMO-LUMO gap, if the molecule absorbs part of the visible spectrum (i.e. if the HOMO-LUMO gap corresponds to a visible wavelength), then the remaining parts of the visible spectrum will be transmitted, and the molecule will look like the colour of the remaining parts. If the HOMO-LUMO gap corresponds to a red wavelength, the molecule will absorb red light, so will appear blue.
+			\item Each quantum state can hold two electrons, so the value of $n$ for the HOMO is $n=11$·
+			\item I'm looking for a calculation here. The top of the question says that we can model this molecule as a particle in a 1D box. If we know that $n=11$ and $L=\SI{18E-10}{m}$, then we can use the formula:
+				\begin{equation}
+					\Delta E = (2n+1)\frac{h^2}{8mL^2}
+				\end{equation}
+				Where $n$ is the quantum number of the lower state (HOMO), $m$ is the mass of an electron (\SI{9.1E-31}{\kilo\gram}), and $L$ is the length of the molecule from above. The energy gap $\Delta E = \SI{4.28E-19}{\joule} = \SI{2.6}{\electronvolt}$ which corresponds to a wavelength of $\SI{477}{\nano\metre}$. This is a blue wavelength, so the molecule will appear red.
+			\item To make it appear bright blue, we would need to alter the length such that the energy gap corresponds to a red wavelength. So we need to shrink the energy gap so it corresponds to a wavelength of about \SI{650}{\nano\metre}. This is about \SI{1.9}{\electronvolt} or \SI{3.04E-19}{\joule}. We can just rearrange the formula for $\Delta E$ to give $L$ as the subject, doing this would result in a value of $L$ of about \SI{2.1E-9}{\metre} or \SI{21}{\angstrom}. A longer box results in a smaller $\Delta E$ and a molecule that looks more blue, as expected. 
+			\item Firstly, \SI{532.3}{\nano\metre} is green, so the molecule would look reddish. We now know everything except our value of $n$, so rearranging our $\Delta E$ formula and plugging in the values given results in a value of $2n+1$ as 13. So $n = 6$. This is the quantum state of the HOMO, so there are 12 electrons in the molecule.  		
+		\end{enumerate}
+	\item 
+		\begin{enumerate}
+			\item The characteristic frequency, $\nu_{\text{vib.}}$, is given by $\frac{1}{2\pi}\sqrt{\frac{k_f}{m}}$. Plugging in the numbers given gives a characteristic frequency of \SI{4.2E13}{\hertz} or \SI{42}{\tera\hertz}.
+			\item The ZPE is given by $0.5h\nu_{\text{vib.}}$. The rest is just unit conversions. The ZPE = \SI{2.7E-20}{\joule} = \SI{0.17}{\electronvolt} = \SI{1370}{\per\centi\metre}.
+			\item As the system behaves as a harmonic oscillator, the level spacing is simply twice the ZPE, so is \SI{2740}{\per\centi\metre}.
+		\end{enumerate}
+	\item This question looks a bit horrendous but really just serves to help practice some numeracy and fluency converting units. I am aware this isn't how vibrational ladder climbing really works (I thought calculating the chirp of the driving pulse might be a bit much!). The photon energy from the laser is \SI{1.16}{\electronvolt}, or \SI{1.85E-19}{\joule}. This must equal $h\nu_{\text{vib.}}$ for the ladder climbing to work, so $\nu_{\text{vib.}}$ must be equal to \SI{280}{\tera\hertz}. Rearrangement of the formula for $\nu_{\text{vib.}}$ using a reduced mass of \SI{28}{\dalton} gives the force constant as \SI{138660}{\newton\per\metre} - which is pretty high!
+	\item We are given the bond length and told that both atoms are \ce{35Cl}. The moment of inertia around an axis perpendicular to the bond is given by $I = 2m_{Cl}\bigg(\frac{r_{\ce{Cl2}}}{2}\bigg)^2$. Plugging in the values correctly gives a moment of inertia of \SI{1.097E-45}{\kg\metre\squared}. The formula for the rotational constant is given by $B = \frac{\hbar}{4\pi cI}$. This will give the rotational constant in $\si{\per\metre}$ as \SI{25.49}{\per\metre} - to convert this to wavenumbers simply divide by 100, so B is\SI{0.25}{\per\metre} in wavenumbers. 
+
+
+
+
+\end{enumerate}
+
+\end{document}

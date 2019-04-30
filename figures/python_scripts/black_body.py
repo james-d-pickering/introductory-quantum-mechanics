@@ -21,8 +21,8 @@ k = 1.38E-23
 
 plt.close('all')
 
-sun_spectra = np.loadtxt('sun_black_body.txt')
-wavelength_sun = np.loadtxt('sun_wavelengths.txt')
+sun_spectra = np.loadtxt('../data_files_for_figures/sun_black_body.txt')
+wavelength_sun = np.loadtxt('../data_files_for_figures/sun_wavelengths.txt')
 wavelength_nm = np.linspace(0,5000,500)
 wavelength_m = wavelength_nm/1E9
 frequency = c/wavelength_m
@@ -41,4 +41,4 @@ plt.xlabel(r'Wavelength [nm]')
 plt.ylabel(r'Spectral Radiance [a.u.]')
 plt.legend()
 
-plt.savefig('black_body.png')
+plt.savefig('../final_figures/black_body.png',dpi=400,bbox_inches='tight')

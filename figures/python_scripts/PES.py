@@ -57,4 +57,4 @@ plt.text(0.95,0.9,r'$r<r_m$, $E>E_0$',fontsize=8,ha='center',va='center')
 plt.text(0.9,-0.8,r'$r=r_m$, $E<E_0$',fontsize=8,ha='center',va='center')
 plt.text(1.2,0.2,r'$r>r_m$, $E=E_0$',fontsize=8,ha='center',va='center')
 
-plt.savefig('PES.png', bbox_inches='tight', dpi=200)
+plt.savefig('../final_figures/PES.png', bbox_inches='tight', dpi=400)

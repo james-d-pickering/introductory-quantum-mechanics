@@ -32,7 +32,7 @@ for i in E:
     
 plt.plot(x, v, lw=2, color='k')
 plt.annotate('',xy=(-1,Ev[1]), xytext=(-1,Ev[2]),color='k',arrowprops=dict(arrowstyle='<->'))
-plt.text(-0.8, 2, r'$\hbar \omega', ha='center', va='center')
+plt.text(-0.7, 2, r'$h\nu_{\text{vib}}$', ha='center', va='center')
 #plt.fill_between(x, y1=0, y2=v, alpha=0.8, color='xkcd:dark orange')
 plt.xlim(-4,4)
 plt.ylim(0,6)
@@ -44,5 +44,5 @@ plt.xticks([0])
 plt.xlabel(r'$r-r_e$ [arb. units]')
 plt.yticks([])
 
-plt.ylabel(r'Energy [$\hbar \omega$]')
-plt.savefig('harmonic_oscillator_energies.png',bbox_inches='tight',dpi=600)
+plt.ylabel(r'Energy [$h\nu_{\text{vib}}$]')
+plt.savefig('../final_figures/harmonic_oscillator_energies.png',bbox_inches='tight',dpi=400)

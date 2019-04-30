@@ -17,9 +17,9 @@
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="hooke_law.svg"
-   inkscape:export-filename="/home/pickering/Dropbox/Work/Leicester/introductory_quantum/hooke_law.png"
-   inkscape:export-xdpi="200"
-   inkscape:export-ydpi="200">
+   inkscape:export-filename="/home/pickering/Dropbox/Work/Leicester/introductory_quantum/figures/final_figures/hooke_law.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
   <defs
      id="defs2">
     <marker
@@ -134,9 +134,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="442.0111"
-     inkscape:cy="267.87978"
+     inkscape:zoom="0.7"
+     inkscape:cx="248.15457"
+     inkscape:cy="107.34112"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -145,10 +145,10 @@
      fit-margin-left="4"
      fit-margin-right="4"
      fit-margin-bottom="4"
-     inkscape:window-width="721"
-     inkscape:window-height="427"
-     inkscape:window-x="857"
-     inkscape:window-y="203"
+     inkscape:window-width="1600"
+     inkscape:window-height="851"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      showguides="false" />
   <metadata
@@ -159,7 +159,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -568,19 +568,21 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="6.0531139"
+       x="3.9364471"
        y="211.46356"
        id="text1557"><tspan
          sodipodi:role="line"
          id="tspan1555"
-         x="6.0531139"
+         x="3.9364471"
          y="211.46356"><tspan
    id="tspan1549"
    style="font-size:7.76111126px">F</tspan><tspan
    id="tspan1551"
    style="font-size:7.76111126px;baseline-shift:sub">R</tspan><tspan
    id="tspan1553"
-   style="font-size:7.76111126px"> = -0.1k</tspan> </tspan></text>
+   style="font-size:7.76111126px"> = -0.1k</tspan><tspan
+   id="tspan902"
+   style="font-size:64.99999762%;baseline-shift:sub">f</tspan> </tspan></text>
     <text
        id="text1567"
        y="243.21313"
@@ -596,6 +598,8 @@
    style="font-size:7.76111126px;baseline-shift:sub"
    id="tspan1561">R</tspan><tspan
    style="font-size:7.76111126px"
-   id="tspan1563"> = -k</tspan> </tspan></text>
+   id="tspan1563"> = -k</tspan><tspan
+   id="tspan908"
+   style="font-size:65%;baseline-shift:sub">f</tspan> </tspan></text>
   </g>
 </svg>

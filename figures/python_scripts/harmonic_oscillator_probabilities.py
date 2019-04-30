@@ -52,13 +52,14 @@ plt.legend(frameon=True,loc=4)
 #ax.add_artist(axis3)
 
 
-plt.xlabel(r'$x$',)
+plt.xlabel(r'$x = r-r_e$',)
 plt.ylabel(r'Probability Density, $\Psi^2(x)$')
 ax.tick_params(axis='y',length=0)
 x_v = np.linspace(-10,10,10000)
 v = 0.5*0.03*x_v**2
 plt.plot(x_v,v, alpha=0.7)
 ax.set_yticklabels([])
+
 
 plt.ylim(0,0.6)
 plt.xlim(-10,10)
@@ -77,6 +78,7 @@ x_v = np.linspace(-10,10,10000)
 v = 0.5*0.03*x_v**2
 plt.plot(x_v,v, alpha=0.7)
 #¤plt.plot(x, v)
+plt.xlabel(r'$x = r-r_e$',)
 
 
 plt.legend(loc=4)
@@ -89,12 +91,13 @@ plt.grid()
 plt.ylim(0)
 plt.xlim(-10,10)
 ax.tick_params(axis='y',length=0)
+
 ax.set_yticklabels([])
 x_v = np.linspace(-10,10,10000)
 v = 0.5*0.03*x_v**2
 plt.plot(x_v,v, alpha=0.7)
-
+plt.xlabel(r'$x = r-r_e$',)
 
 plt.legend(loc=4)
 
-plt.savefig('harmonic_oscillator_probabilities.png',bbox_inches='tight',dpi=300)
+plt.savefig('../final_figures/harmonic_oscillator_probabilities.png',bbox_inches='tight',dpi=400)

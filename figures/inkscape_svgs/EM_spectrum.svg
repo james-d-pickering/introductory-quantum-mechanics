@@ -16,7 +16,7 @@
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="EM_spectrum.svg"
-   inkscape:export-filename="/home/pickering/Dropbox/Work/Leicester/introductory_quantum/EM_spectrum.png"
+   inkscape:export-filename="/home/pickering/Dropbox/Work/Leicester/introductory_quantum/figures/final_figures/EM_spectrum.png"
    inkscape:export-xdpi="400"
    inkscape:export-ydpi="400">
   <defs
@@ -58,14 +58,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="418.90372"
-     inkscape:cy="209.36298"
+     inkscape:cx="1046.0466"
+     inkscape:cy="206.50584"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="in"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-width="1600"
+     inkscape:window-height="851"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1" />
@@ -77,7 +77,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -109,9 +109,7 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.60787249px;line-height:1.25;font-family:'Asana Math';-inkscape-font-specification:'Asana Math';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          sodipodi:role="line"
-         id="tspan835"
-         x="0.6228295"
-         y="280.05676">Low ω</tspan></text>
+         id="tspan894">Low ν</tspan></text>
     <text
        id="text839"
        y="273.97156"
@@ -132,7 +130,7 @@
          id="tspan841"
          sodipodi:role="line"
          x="193.05051"
-         y="280.24576">High ω</tspan></text>
+         y="280.24576">High ν</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 25.132292,275.26637 v -11.1503"

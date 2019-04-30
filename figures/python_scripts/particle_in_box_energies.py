@@ -29,7 +29,7 @@ for i in n:
 
 plt.xlim(0,1.4)
 plt.xticks([])
-plt.yticks([])
+plt.yticks([0])
 plt.ylabel(r'Energy/$(h^2/8mL^2)$')
 ax.set_aspect(aspect=0.05)
-plt.savefig('particle_in_box_energies.png', bbox_inches='tight')
+plt.savefig('../final_figures/particle_in_box_energies.png', dpi=400,bbox_inches='tight')

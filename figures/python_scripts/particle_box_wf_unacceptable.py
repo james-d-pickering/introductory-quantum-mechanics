@@ -48,4 +48,4 @@ plt.ylim(0,1)
 ax.fill_between([0,0.25],[0,0],[1,1],color='xkcd:dark orange',alpha=0.8)
 ax.fill_between([0.75,1],[0,0],[1,1],color='xkcd:dark orange',alpha=0.8)
 
-plt.savefig('particle_box_wf_unacceptable.png',bbox_inches='tight')
+plt.savefig('../final_figures/particle_box_wf_unacceptable.png',bbox_inches='tight',dpi=400)

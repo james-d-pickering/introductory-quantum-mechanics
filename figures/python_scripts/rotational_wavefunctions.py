@@ -81,4 +81,4 @@ ax.scatter(x_invalid, y_invalid, z_invalid, color='r',s=1,label=r'$\Psi_\text{In
 ax.plot3D(x_ring,y_ring,z_ring, color='k')
 plt.axis('off')
 #plt.legend()
-plt.savefig('rotational_wavefunctions.png',bbox_inches='tight',dpi=400)
+plt.savefig('../final_figures/rotational_wavefunctions.png',bbox_inches='tight',dpi=400)

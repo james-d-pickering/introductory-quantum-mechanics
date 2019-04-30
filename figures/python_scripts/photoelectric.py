@@ -55,4 +55,4 @@ plt.xlabel(r'Incident Photon Energy [eV]')
 plt.ylabel(r'$KE_{Elec.} [eV]')
 plt.legend(fontsize=12)
 
-plt.savefig('photoelectric.png',bbox_inches='tight',dpi=300)
+plt.savefig('../final_figures/photoelectric.png',bbox_inches='tight',dpi=400)

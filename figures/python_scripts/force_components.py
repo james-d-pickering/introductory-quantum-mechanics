@@ -72,4 +72,4 @@ plt.xlabel(r'Component along $x$', color='C0')
 plt.ylabel(r'Component along $y$', color='C1')
 plt.grid()
 
-plt.savefig('force_components.png',bbox_inches='tight',dpi=400)
+plt.savefig('../final_figures/force_components.png',bbox_inches='tight',dpi=400)
